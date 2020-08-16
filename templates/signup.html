@@ -1,0 +1,12 @@
+
+{% extends 'home.html' %}
+{% block content %}
+    <div id="reg">
+        <h3>Rejestracja</h3>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <input id="rejestracja" type="submit" value="Zarejestruj"/>
+        </form>
+    </div>
+{% endblock %}
